@@ -1,0 +1,13 @@
+services:
+  server:
+    image: etp_api
+    container_name: "etp_api"
+    build:
+      context: .
+      dockerfile: Dockerfile.local
+    volumes:
+      - ./.build/volumes/logs:/logs
+    env_file:
+      - .env
+    ports:
+      - 8005:80

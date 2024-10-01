@@ -5,11 +5,10 @@ import (
 	"encoding/json"
 	"etp/pkg/db"
 	"fmt"
+	"github.com/gorilla/mux"
 	"net/http"
 	"os"
 	"strconv"
-
-	"github.com/gorilla/mux"
 )
 
 type API struct {
